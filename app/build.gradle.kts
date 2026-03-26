@@ -45,6 +45,7 @@ android {
 
 dependencies {
     val roomVersion = "2.8.4"
+
     // Les bibliothèques Room de base
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion") // Support des Coroutines et Flow
@@ -52,6 +53,7 @@ dependencies {
     // Outils pour lier la base de données à l'interface Compose
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.10.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
